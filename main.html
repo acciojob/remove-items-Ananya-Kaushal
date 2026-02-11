@@ -20,6 +20,13 @@
 		</form>
 
 		<script type="text/javascript" src="./script.js">
+        // Place the function here or in an external .js file
+        function removeSelectedColor() {
+            const dropdown = document.getElementById("colorSelect");
+            if (dropdown.selectedIndex !== -1) {
+                dropdown.remove(dropdown.selectedIndex);
+            }
+        }
 		</script>
 
 	</body>
